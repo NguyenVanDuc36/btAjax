@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="myDemo container">
+        <div class="card">
+            <div class="card-header bg-dark text-center">
+                <h3 class="display-5 text-white">Quản lí nhân viên</h3>
+            </div>
+            <div class="card-body">
+                <form class="group-form">
+                    <p >Mã nhân viên</p>
+                    <input id="maNhanVien" type="text" class="form-control">
+                    <p id="error_required_maNhanVien" class="text-danger"></p>
+                    <p id="error_allNumber_maNhanVien" class="text-danger"></p>
+                    <p id="error_length_maNhanVien" class="text-danger"></p>
+                </form>
+                <form class="group-form">
+                    <p >Tên nhân viên</p>
+                    <input id="tenNhanVien" type="text" class="form-control">
+                    <p id="error_required_tenNhanVien" class="text-danger"></p>
+                    <p id="error_allLetter_tenNhanVien" class="text-danger"></p>
+                </form>
+                <form class="group-form">
+                    <p >Chức vụ</p>
+                    <select id="chucVu" class="form-control">
+                        <option value="1">Nhân viên</option>
+                        <option value="2">Quản lý</option>
+                        <option value="3">Giám đốc</option>
+                    </select>
+                </form>
+                <form class="group-form">
+                    <p >Lương cơ bản</p>
+                    <input id="luongCoBan" type="text" class="form-control">
+                    <p id="error_required_luongCoBan" class="text-danger"></p>
+                    <p id="error_length_luongCoBan" class="text-danger"></p>
+                </form>
+                <form class="group-form">
+                    <p>Số giờ làm trong tháng</p>
+                    <input  id="soGioLamTrongThang" type="text" class="form-control">
+                    <p id="error_required_soGio" class="text-danger"></p>
+                    <p id="error_length_soGio" class="text-danger"></p>
+                </form>
+            </div>
+            <div class="card-footer">
+                <form class="text-right">
+                    <button class="btn btn-success text-success bg-light" id="btnThemNV">Thêm nhân viên</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+    </section>
+
+    <div class="container">
+        <table class="table" style="margin-bottom:300px">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>Mã nhân viên</th>
+                    <th>Tên nhân viên</th>
+                    <th>Chức vụ</th>
+                    <th>Lương cơ bản</th>
+                    <th>Tổng lương</th>
+                    <th>Giờ làm/tháng</th>
+                    <th>Xếp loại nhân viên</th>
+                </tr>
+            </thead>
+            <tbody id="tbNhanVien">
+    
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./models/nhanVien.js"></script>
+    <script src="./index.js"></script>
+    <script src="./models/validation.js"></script>
+</body>
+
+</html>git remote add origin https://github.com/NguyenVanDuc36/btAjax.git
